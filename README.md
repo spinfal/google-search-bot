@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/788198099067076638/885038026961592370/image0.jpg" />
+  <img src="https://cdn.discordapp.com/attachments/788198099067076638/885228610380767262/image0.jpg" />
 </p>
 
 # Spoogle
