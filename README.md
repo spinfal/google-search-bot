@@ -17,4 +17,4 @@ A simple Google search bot, that's easy to setup.
 - Create a new Issue
   - If you don't provide the error message, or any details, I will ignore your issue.
  
-> ily -- made by spin -- https://spin.tk
+> ily -- made for education purposes -- made by spin -- https://spin.tk
