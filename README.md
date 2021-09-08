@@ -3,7 +3,7 @@
 </p>
 
 # Spoogle
-A simple Google search bot, that's easy to setup.
+A simple search bot that uses Google and is easy to setup.
 
 # Setup
 - Create a bot on Discord's Developer dashboard
