@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.3",
+    "discord.js": "git+https://git@github.com/spinfal/discord.js.git",
     "google-it": "^1.6.2"
   }
 }
