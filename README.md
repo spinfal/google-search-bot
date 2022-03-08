@@ -3,7 +3,7 @@
 </p>
 
 # Spoogle
-A simple search bot that uses Google and is easy to setup.
+A simple search bot that uses Google and is easy to setup. To use the Discord v13 version of this bot that has Slash Commands implemented, switch to the [v13 branch](https://github.com/spinfal/google-search-bot/tree/spoogle-v13)
 
 # Setup
 - Create a bot on Discord's Developer dashboard
