@@ -24,7 +24,7 @@ export class ImageSearchCommand extends BaseCommand {
                     }
                 ]
             },
-            category: "General",
+            category: "Utility",
         });
     }
 
@@ -56,10 +56,19 @@ export class ImageSearchCommand extends BaseCommand {
                 const errorEmbed = new MessageEmbed()
                     .setColor("RED")
                     .setTitle('An error has occurred')
-                    .setDescription(`${e}`);
+                    .setDescription(`${e}, perhaps no search results were found.`);
 
                 ctx.send({
-                    embeds: [errorEmbed]
+                    embeds: [errorEmbed],
+                    components: [
+                        new MessageActionRow()
+                            .addComponents(
+                                new MessageButton()
+                                    .setStyle("LINK")
+                                    .setURL(`https://www.google.com/search?q=${encodeURIComponent(query)}&tbm=isch&sclient=img`)
+                                    .setLabel("Try searching yourself instead")
+                            )
+                    ]
                 });
             })
         }

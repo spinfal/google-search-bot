@@ -24,7 +24,7 @@ export class SearchCommand extends BaseCommand {
                     }
                 ]
             },
-            category: "General",
+            category: "Utility",
         });
     }
 
@@ -35,6 +35,26 @@ export class SearchCommand extends BaseCommand {
 
         if (query) {
             googleIt({'query': query, 'limit': 'searchLimit', 'disableConsole': true }).then(results => {
+                if (results.length < 1) {
+                    const errorEmbed = new MessageEmbed()
+                    .setColor("RED")
+                    .setTitle('No search results found')
+                    .setDescription(`There were no results found with the query ${query}`);
+
+                    return ctx.send({
+                        embeds: [errorEmbed],
+                        components: [
+                            new MessageActionRow()
+                                .addComponents(
+                                    new MessageButton()
+                                        .setStyle("LINK")
+                                        .setURL(`https://www.google.com/search?q=${encodeURIComponent(query)}`)
+                                        .setLabel("Try searching yourself instead")
+                                )
+                        ]
+                    });
+                }
+                
                 results = results.map(result => `[${result.title}](${result.link})\n${result.snippet}\n`).join("\n");
                 ctx.send({
                     embeds: [
