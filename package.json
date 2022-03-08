@@ -5,7 +5,7 @@
     "description": "An open-source discord bot template",
     "scripts": {
         "app": "node src/index.js",
-        "start": "npm run lint && npm run app",
+        "start": "npm run app",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix"
     },
@@ -23,11 +23,8 @@
     "license": "MIT",
     "dependencies": {
         "discord.js": "^13.5.0",
-        "dotenv": "^10.0.0"
-    },
-    "devDependencies": {
-        "@hazmi35/eslint-config": "^7.0.1",
-        "eslint": "^8.2.0",
-        "eslint-plugin-import": "^2.25.2"
+        "dotenv": "^10.0.0",
+        "free-google-images": "^1.2.1",
+        "google-it": "^1.6.2"
     }
 }

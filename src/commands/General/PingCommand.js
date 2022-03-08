@@ -6,7 +6,7 @@ export class PingCommand extends BaseCommand {
         super(client, {
             slash: {
                 name: "ping",
-                description: "gives the ping of the bot"
+                description: "Returns the ping of the bot"
             },
             category: "General"
         });
