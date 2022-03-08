@@ -3,7 +3,7 @@
 </p>
 
 # Spoogle v13
-A simple search bot that uses Google and is easy to setup.
+A simple search bot that uses Google and is easy to setup. This version is using Discord.js v13 and Slash Commands (🤢)
 
 # Setup
 - Create a bot on Discord's Developer dashboard
